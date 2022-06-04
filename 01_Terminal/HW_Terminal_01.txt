@@ -1,0 +1,60 @@
+1. Посмотреть где я
+*pwd*
+2. Создать папку
+*mkdir folder*
+3. Зайти в папку
+*cd folder*
+4. Создать 3 папки
+*mkdir folder1 folder2 folder3*
+5. Зайти в любоую папку
+*cd folder2*
+6. Создать 5 файлов (3 txt, 2 json)
+*touch file.txt file_2.txt file_3.txt file_4.json file_5.json*
+7. Создать 3 папки
+*mkdir folder4 folder 5 folder6*
+8. Вывести список содержимого папки
+*ls -la / folder*
+9. Открыть любой txt файл
+*cat file.txt*
+10. написать туда что-нибудь, любой текст.
+*cat >> file.txt*
+11. сохранить и выйти.
+*enter + ctrl + c*
+12. Выйти из папки на уровень выше
+*cd ..*
+13. переместить любые 2 файла, которые вы создали, в любую другую папку.
+*mv file.txt file_2.txt folder3/*
+14. скопировать любые 2 файла, которые вы создали, в любую другую папку.
+*cp file_3.txt file_4.json folder4/*
+15. Найти файл по имени
+*find file_2.txt
+find -name file_2.txt*
+16. просмотреть содержимое в реальном времени (команда grep) изучите как она работает.
+*grep ‘something’ file1.txt*
+[https://wiki.merionet.ru/servernye-resheniya/39/rukovodstvo-po-komande-grep-v-linux/](https://wiki.merionet.ru/servernye-resheniya/39/rukovodstvo-po-komande-grep-v-linux/)
+17. вывести несколько первых строк из текстового файла
+*head -n3 file.txt*
+[https://otus.ru/nest/post/1123/](https://otus.ru/nest/post/1123/)
+18. вывести несколько последних строк из текстового файла
+*tail -n3 file.txt*
+[https://www.ibm.com/docs/ru/aix/7.2?topic=files-displaying-last-lines-tail-command](https://www.ibm.com/docs/ru/aix/7.2?topic=files-displaying-last-lines-tail-command)
+19. просмотреть содержимое длинного файла (команда less) изучите как она работает.
+*less file.txt*
+20. вывести дату и время
+*date*
+
+Задание *
+
+1. Отправить http запрос на сервер.
+[http://162.55.220.72:5005/terminal-hw-request](http://162.55.220.72:5005/terminal-hw-request)
+curl “[http://162.55.220.72:5005/terminal-hw-request](http://162.55.220.72:5005/terminal-hw-request)”
+2. Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+
+*#!/bin/bash
+cd folder_3
+mkdir scripted_1 scripted_2 scripted_3
+cd scripted_1
+touch sfile_1 sfile_2 sfile_3
+mkdir scripted_4 scripted_5 scripted_6
+ls
+mv sfile_1 sfile_2 scripted_5*
