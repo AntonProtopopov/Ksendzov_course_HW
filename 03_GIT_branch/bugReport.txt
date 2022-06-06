@@ -12,5 +12,5 @@ Severity:
 
 Priority:
 
-Attachements:
+Attachments:
 
