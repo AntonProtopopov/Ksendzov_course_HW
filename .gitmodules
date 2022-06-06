@@ -4,3 +4,6 @@
 [submodule "02_GIT/XML"]
 	path = 02_GIT/XML
 	url = https://github.com/AntonProtopopov/XML.git
+[submodule "02_GIT/TXT"]
+	path = 02_GIT/TXT
+	url = https://github.com/AntonProtopopov/TXT.git
